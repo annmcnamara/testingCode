@@ -38,6 +38,7 @@ def get_one_user_results(state_id):
     print(state_id)
     return jsonify(data.get_cases(state_id))    
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    # Setting debug to True enables debug output. This line should be
+    # removed before deploying a production app.
+    app.run()
